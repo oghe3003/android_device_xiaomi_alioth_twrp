@@ -58,3 +58,6 @@ PRODUCT_HOST_PACKAGES += \
 # HACK: Set vendor patch level
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.build.security_patch=2099-12-31
+
+# For building with minimal manifest
+ALLOW_MISSING_DEPENDENCIES := true
