@@ -146,11 +146,6 @@ PLATFORM_SECURITY_PATCH := 2099-12-31
 VENDOR_SECURITY_PATCH := 2099-12-31
 PLATFORM_VERSION := 16.1.0
 
-# Fix A11 decryption
-BOARD_AVB_RECOVERY_ADD_HASH_FOOTER_ARGS += \
-    --prop com.android.build.boot.os_version:$(PLATFORM_VERSION) \
-    --prop com.android.build.boot.security_patch:$(PLATFORM_SECURITY_PATCH)
-
 # Additional binaries & libraries needed for recovery
 TARGET_RECOVERY_DEVICE_MODULES += ashmemd
 TW_RECOVERY_ADDITIONAL_RELINK_BINARY_FILES += \
